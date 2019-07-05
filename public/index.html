@@ -16,7 +16,7 @@
   <script defer src="/__/firebase/6.2.4/firebase-app.js"></script>
   <!-- include only the Firebase features as you need -->
   <script defer src="/__/firebase/6.2.4/firebase-auth.js"></script>
-  <script defer src="/__/firebase/6.2.4/firebase-database.js"></script>
+  <script defer src="/__/firebase/6.2.4/firebase-firestore.js"></script>
   <script defer src="/__/firebase/6.2.4/firebase-messaging.js"></script>
   <script defer src="/__/firebase/6.2.4/firebase-storage.js"></script>
   <!-- initialize the SDK after all desired features are loaded -->
@@ -41,17 +41,22 @@
       <li class="list-group-item">Cloud Storage</li>
     </ul>
   </div>
+  <hr>
   <div class="container">
     <div class="col">
       <h4>User Authentication</h4>
       <button type="button" class="btn btn-primary" onclick="googleLogin()">Login with Google</button>
+      <h4> Logged in user: </h4><span id="authentication"></span>
     </div>
-    <div class="col" id="authentication">
+    <hr>
+    <div class="col">
+      <h4> Database Posts:</h4>
+      <div id="posts">
 
+      </div>
     </div>
   </div>
-
-
+  </div>
   <script src="app.js">
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
