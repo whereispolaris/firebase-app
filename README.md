@@ -1,4 +1,4 @@
-# firebase-app
+# firebase-authentication
 Firebase application
 
 Installation:
